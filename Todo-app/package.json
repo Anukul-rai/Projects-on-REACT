@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "flat-cache": "^6.1.10",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "styled-components": "^6.1.19"
@@ -28,5 +29,4 @@
   "resolutions": {
     "styled-components": "^5"
   }
-
 }
