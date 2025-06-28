@@ -1,20 +1,11 @@
-import styled from "styled-components"
+import React from 'react'
 
-const TodoTitle = () => {
-  return (
-    <Title>
-      <h1>Todo List</h1>
-    </Title>
+const Todotitle = () => {
+    return (
+        <div className='  font-bold text-4xl text-blue-950 my-4 text-center'>
+            <h1>My Todo List</h1>
+        </div>
   )
 }
 
-export default TodoTitle
-
-const Title = styled.div`
-  text-align: center;
-  font-size: 29px;
-  color: #333;
-  margin-bottom: 1rem;
-  font-weight: bold;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
-`
+export default Todotitle
