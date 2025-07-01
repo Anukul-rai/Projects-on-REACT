@@ -2,27 +2,21 @@ import Todotitle from './components/Todotitle'
 import List from './components/List'
 import AddBtn from './components/AddBtn'
 import { useState } from 'react'
-// import Counter from './components/Counter'
+import Maintodo from './components/Maintodo'
+import Counter from './components/Counter'
+  import { ToastContainer, toast } from 'react-toastify';
+
 
 function App() {
-  const[todo,setTodo]=useState([])
-
-
-  const handleAdd=(newTodo)=>{
-    setTodo([...todo,newTodo])
-  }
-  const handleDelete=(indexToDelete)=>{
-    setTodo(todo.filter((_, i) => i !== indexToDelete));
-  }
+  
   return (
-    <div className="min-h-screen flex flex-col  justify-center bg-gray-100">
+    <div className="min-h-screen bg-indigo-900 flex items-center justify-center">
       {/* <Counter/> */}
-      <Todotitle/>
-      <AddBtn onAdd={handleAdd}/>
-      <List
-      todo={todo}
-      onDelete={handleDelete}
-      />
+      {/* <Todotitle/> */}
+      {/* <AddBtn onAdd={handleAdd}/>
+      <List todo={todo} onDelete={handleDelete}/> */}
+      <Maintodo/>
+      <ToastContainer/>
     </div>
   )
 }
